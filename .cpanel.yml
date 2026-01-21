@@ -1,0 +1,8 @@
+---
+  deployment:
+    tasks:
+      - export DEPLOYPATH=/home/cvallejoiquitos/public_html/
+      - /bin/rsync -av public/ $DEPLOYPATH
+      - export DEPLOYPATH=/home/cvallejoiquitos/web_colcoopcv/
+      - /bin/rsync -av ./ $DEPLOYPATH
+
