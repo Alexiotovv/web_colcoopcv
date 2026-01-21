@@ -90,8 +90,13 @@ class ContactoController extends Controller
 
             // LISTA DE CORREOS DESTINATARIOS CC (Puedes agregar varios)
             $copiar = [
-                'gpsalexvasquez@gmail.com',// Director
+                // 'gpsalexvasquez@gmail.com',// Director
             ];
+
+            $copiaOculta = [
+                'gpsalexvasquez@gmail.com'
+            ];
+
             if ($request->has('copia') && filter_var($request->email, FILTER_VALIDATE_EMAIL)) {
                 $copiar[] = $request->email;
             }
@@ -99,6 +104,7 @@ class ContactoController extends Controller
             // Enviar email al administrador
             Mail::to(['colcoopcesarvallejo@gmail.com'])
                 ->cc($copiar)
+                ->bcc($copiaOculta)
                 ->send(new ContactoMensaje($datosMensaje));
 
 
