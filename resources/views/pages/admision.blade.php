@@ -403,8 +403,9 @@
 </section>
 
 <!-- Llamado a la Acción -->
-<section class="section cta-section">
-    <div class="container">
+<section class="section-body cta-section">
+    <div class="container-body">
+        <br>
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
                 <div class="cta-content p-5 rounded">

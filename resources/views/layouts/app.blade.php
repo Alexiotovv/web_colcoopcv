@@ -537,6 +537,7 @@
             /* Cambia el color del ícono del menú hamburguesa */
             .navbar-toggler {
                 border-color: var(--white);
+                /* margin-right: 20px; */
             }
 
             .navbar-toggler-icon {

@@ -191,8 +191,8 @@
     </section>
 
    <!-- Sección 3: Nuestra Propuesta Educativa -->
-    <section class="section-body feature-section" id="propuesta-educativa">
-        <div class="container-body">
+    <section class="section feature-section" id="propuesta-educativa">
+        <div class="container">
             <div class="row align-items-center">
                 <!-- Foto vertical a la izquierda -->
                 <div class="col-lg-5 mb-5 mb-lg-0">
