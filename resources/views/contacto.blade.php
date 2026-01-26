@@ -83,6 +83,117 @@
             
             <!-- Formulario de Contacto -->
             <div class="col-lg-8">
+                <div class="contacto-info-card p-4">
+                    <h3 class="section-title mb-4">
+                        <i class="bi bi-telephone-forward me-2"></i>
+                        Cómo Contactarnos
+                    </h3>
+                    
+                    <div class="row">
+                        <!-- Canal 1: Teléfono Principal -->
+                        <div class="col-md-6 mb-4">
+                            <div class="canal-contacto text-center p-4 h-100">
+                                <div class="canal-icon mb-3">
+                                    <i class="bi bi-telephone-fill" style="font-size: 2.5rem; color: #1a4f8c;"></i>
+                                </div>
+                                <h4 class="canal-title">Teléfono Principal</h4>
+                                <p class="canal-desc mb-3">Para consultas generales</p>
+                                <div class="canal-info">
+                                    <p class="fw-bold" style="font-size: 1.5rem; color: #1a4f8c;">+51 973 891 800</p>
+                                    <p class="text-muted small">Lunes a Viernes: 8:00 AM - 4:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Canal 2: Visita Personal -->
+                        <div class="col-md-6 mb-4">
+                            <div class="canal-contacto text-center p-4 h-100">
+                                <div class="canal-icon mb-3">
+                                    <i class="bi bi-building" style="font-size: 2.5rem; color: #1a4f8c;"></i>
+                                </div>
+                                <h4 class="canal-title">Visita Personal</h4>
+                                <p class="canal-desc mb-3">Para atención directa</p>
+                                <div class="canal-info">
+                                    <p class="fw-bold mb-2">Horarios de atención:</p>
+                                    <p class="mb-1">Lunes a Viernes: 8:00 AM - 4:00 PM</p>
+                                    <p>Sábados: 9:00 AM - 12:00 PM</p>
+                                    <div class="mt-3">
+                                        <a href="#mapa" class="btn btn-outline-primary">
+                                            <i class="bi bi-geo-alt me-2"></i> Ver Ubicación
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Canal 3: Secretaría -->
+                        <div class="col-md-6 mb-4">
+                            <div class="canal-contacto text-center p-4 h-100">
+                                <div class="canal-icon mb-3">
+                                    <i class="bi bi-clipboard-data" style="font-size: 2.5rem; color: #1a4f8c;"></i>
+                                </div>
+                                <h4 class="canal-title">Secretaría</h4>
+                                <p class="canal-desc mb-3">Para trámites y documentación</p>
+                                <div class="canal-info">
+                                    <p class="fw-bold mb-2">Atención:</p>
+                                    <p class="mb-1">Mismo teléfono principal</p>
+                                    <p class="mb-3">Extensión para secretaría</p>
+                                    <p class="small text-muted">Documentación, certificados, trámites administrativos</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Canal 4: Dirección -->
+                        <div class="col-md-6 mb-4">
+                            <div class="canal-contacto text-center p-4 h-100">
+                                <div class="canal-icon mb-3">
+                                    <i class="bi bi-person-badge" style="font-size: 2.5rem; color: #1a4f8c;"></i>
+                                </div>
+                                <h4 class="canal-title">Dirección</h4>
+                                <p class="canal-desc mb-3">Para consultas directivas</p>
+                                <div class="canal-info">
+                                    <p class="fw-bold mb-2">Atención con cita previa</p>
+                                    <p class="mb-3">Solicite cita a través de secretaría</p>
+                                    <p class="small text-muted">Consultas estratégicas, entrevistas, temas directivos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Información adicional -->
+                    {{-- <div class="alert alert-info mt-4">
+                        <h5 class="alert-heading">
+                            <i class="bi bi-info-circle me-2"></i>
+                            Recomendaciones para contactarnos
+                        </h5>
+                        <p class="mb-0">
+                            Para una mejor atención, le sugerimos:<br>
+                            1. <strong>Para consultas generales:</strong> Llame al número principal en horario de atención<br>
+                            2. <strong>Para trámites administrativos:</strong> Visítenos personalmente en secretaría<br>
+                            3. <strong>Para entrevistas con dirección:</strong> Solicite cita previa<br>
+                            4. <strong>Horario preferente:</strong> Mañanas de 8:00 AM a 12:00 PM
+                        </p>
+                    </div> --}}
+                    
+                    <!-- Llamada a la acción -->
+                    <div class="text-center mt-4 p-3 bg-light rounded">
+                        <h5 class="mb-3">¿Listo para contactarnos?</h5>
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <a href="tel:+51973891800" class="btn btn-primary btn-lg">
+                                <i class="bi bi-telephone me-2"></i> Llamar Ahora
+                            </a>
+                            <a href="#mapa" class="btn btn-outline-primary btn-lg">
+                                <i class="bi bi-geo-alt me-2"></i> Ver Dirección
+                            </a>
+                        </div>
+                        <p class="mt-3 small text-muted">
+                            Nuestro equipo estará encantado de atenderle personalmente
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            {{-- <div class="col-lg-8">
                 <div class="contacto-form-card p-4">
                     <h3 class="section-title mb-4">
                         <i class="bi bi-send me-2"></i>
@@ -183,7 +294,7 @@
                         </div>
                     </form>
                 </div>
-            </div>
+            </div> --}}
         </div>
         
         <!-- Mapa -->
@@ -369,6 +480,59 @@
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             height: 100%;
             justify-items: center;
+        }
+
+        /* Añade esto al estilo existente */
+
+        .canal-contacto {
+            background: #f8f9fa;
+            border-radius: 10px;
+            border: 1px solid #e9ecef;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .canal-contacto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .canal-title {
+            color: #1a4f8c;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .canal-desc {
+            color: #6c757d;
+            font-size: 0.95rem;
+        }
+
+        .canal-icon {
+            width: 70px;
+            height: 70px;
+            background: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #e9ecef;
+        }
+
+        .btn-lg {
+            padding: 12px 30px;
+            font-size: 1.1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .canal-contacto {
+                margin-bottom: 20px;
+            }
+            
+            .btn-lg {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
         }
     }
 </style>
