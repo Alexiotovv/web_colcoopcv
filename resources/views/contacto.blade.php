@@ -100,7 +100,7 @@
                                 <p class="canal-desc mb-3">Para consultas generales</p>
                                 <div class="canal-info">
                                     <p class="fw-bold" style="font-size: 1.5rem; color: #1a4f8c;">+51 973 891 800</p>
-                                    <p class="text-muted small">Lunes a Viernes: 8:00 AM - 4:00 PM</p>
+                                    <p class="text-muted small">Lunes a Viernes: 7:00 AM - 1:00 PM</p>
                                 </div>
                             </div>
                         </div>
@@ -115,8 +115,9 @@
                                 <p class="canal-desc mb-3">Para atención directa</p>
                                 <div class="canal-info">
                                     <p class="fw-bold mb-2">Horarios de atención:</p>
-                                    <p class="mb-1">Lunes a Viernes: 8:00 AM - 4:00 PM</p>
-                                    <p>Sábados: 9:00 AM - 12:00 PM</p>
+                                    <p class="mb-1">Lunes a Viernes: 7:00 AM - 1:00 PM</p>
+                                    {{-- <p class="fw-bold mb-2">Horarios de atención de Verano:</p>
+                                    <p class="mb-1">Lunes a Viernes: 8:00 AM - 12:30 PM</p> --}}
                                     <div class="mt-3">
                                         <a href="#mapa" class="btn btn-outline-primary">
                                             <i class="bi bi-geo-alt me-2"></i> Ver Ubicación
