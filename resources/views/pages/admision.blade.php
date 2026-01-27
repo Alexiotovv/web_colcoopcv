@@ -348,7 +348,7 @@
                 </div>
 
                 <!-- Información de Contacto -->
-                <div class="contacto-info">
+                {{-- <div class="contacto-info">
                     <div class="card border-success">
                         <div class="card-header bg-success text-white">
                             <h4 class="mb-0">
@@ -396,7 +396,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
