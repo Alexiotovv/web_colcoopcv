@@ -130,12 +130,14 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="card resource-card">
-                        <img src="{{asset('img/reginterno.png')}}" class="card-img-top" alt="Reglamento" style="object-fit: scale-down;">
-                        <div class="card-body">
-                            <h5 class="card-title">Reglamento Interno</h5>
+                    <a href="{{route('reglamento.interno')}}" class="card-link-wrapper">
+                        <div class="card resource-card">
+                            <img src="{{asset('img/reginterno.png')}}" class="card-img-top" alt="Reglamento" style="object-fit: scale-down;">
+                            <div class="card-body">
+                                <h5 class="card-title">Reglamento Interno</h5>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="card resource-card">

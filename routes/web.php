@@ -10,6 +10,7 @@ Route::get('/', [HomeController::class, 'index'])->name('inicio');
 // Otras páginas principales
 Route::get('/nosotros', [HomeController::class, 'nosotros'])->name('nosotros');
 Route::get('/admision', [HomeController::class, 'admision'])->name('admision');
+Route::get('/reglamento/interno', [HomeController::class, 'reglamento_interno'])->name('reglamento.interno');
 
 Route::get('/temarios', [HomeController::class, 'temarios'])->name('temarios');
 Route::get('/galerias', [HomeController::class, 'galerias'])->name('galerias');

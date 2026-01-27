@@ -14,9 +14,12 @@ class HomeController extends Controller
         return view('pages.home');
     }
     
-    /**
-     * Mostrar página Nosotros
-     */
+    
+    public function reglamento_interno()
+    {
+        return view('pages.reglamento_interno');
+    }
+
     public function nosotros()
     {
         return view('pages.nosotros');

@@ -347,56 +347,7 @@
                     </div>
                 </div>
 
-                <!-- Información de Contacto -->
-                {{-- <div class="contacto-info">
-                    <div class="card border-success">
-                        <div class="card-header bg-success text-white">
-                            <h4 class="mb-0">
-                                <i class="bi bi-geo-alt me-2"></i>
-                                Información de Contacto y Ubicación
-                            </h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h5 class="text-primary">
-                                        <i class="bi bi-clock me-2"></i>
-                                        Horario de Atención
-                                    </h5>
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2">
-                                            <i class="bi bi-calendar-check text-success me-2"></i>
-                                            <strong>Lunes a Viernes:</strong> 7:00 AM - 1:00 PM
-                                        </li>
-                                        <li class="mb-2">
-                                            <i class="bi bi-calendar-x text-danger me-2"></i>
-                                            <strong>Sábados y Domingos:</strong> Cerrado
-                                        </li>
-                                        <li>
-                                            <i class="bi bi-telephone text-primary me-2"></i>
-                                            <strong>Teléfono:</strong> (01) 456-7890
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <h5 class="text-primary">
-                                        <i class="bi bi-geo-fill me-2"></i>
-                                        Ubicación
-                                    </h5>
-                                    <p>
-                                        <i class="bi bi-house-door text-success me-2"></i>
-                                        <strong>Oficina de Administración:</strong><br>
-                                        Putumayo #981 (Residencia china)<br>
-                                        Lima, Perú
-                                    </p>
-                                    <a href="#" class="btn btn-sm btn-outline-primary">
-                                        <i class="bi bi-map me-1"></i> Ver en Google Maps
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
+
             </div>
         </div>
     </div>
