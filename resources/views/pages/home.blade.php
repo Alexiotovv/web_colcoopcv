@@ -10,14 +10,11 @@
     </div>
     
     <div class="carousel-inner">
-        <!-- Slide 1 con video -->
+        <!-- Slide 1 con IMAGEN (PNG) -->
         <div class="carousel-item active">
-            <video class="d-block w-100" autoplay muted loop playsinline>
-                <source src="{{ asset('carousel/video_slider.mp4') }}" type="video/mp4">
-                <source src="{{ asset('carousel/video_slider.webm') }}" type="video/webm">
-                <!-- Imagen de respaldo por si el video no carga -->
-                <img src="{{ asset('carousel/slider1.png') }}" class="d-block w-100" alt="Excelencia Educativa Integral">
-            </video>
+            <!-- Imagen PNG -->
+            <img src="{{ asset('carousel/slider1.png') }}" class="d-block w-100" alt="Excelencia Educativa Integral">
+            
             <div class="carousel-caption">
                 <h2>Excelencia Educativa Integral</h2>
                 <p>Formamos líderes con valores, preparados para los retos del futuro.</p>
@@ -27,12 +24,13 @@
             </div>
         </div>
         
-        <!-- Slide 2 con video -->
+        <!-- Slide 2 con VIDEO -->
         <div class="carousel-item">
             <video class="d-block w-100" autoplay muted loop playsinline>
-                <source src="{{ asset('carousel/video_slider2.mp4') }}" type="video/mp4">
-                <source src="{{ asset('carousel/video_slider2.webm') }}" type="video/webm">
-                <img src="{{ asset('carousel/slider2.png') }}" class="d-block w-100" alt="Inscripciones Abiertas 2026">
+                <source src="{{ asset('carousel/video_slider.mp4') }}" type="video/mp4">
+                <source src="{{ asset('carousel/video_slider.webm') }}" type="video/webm">
+                <!-- Imagen de respaldo por si el video no carga -->
+                <img src="{{ asset('carousel/slider.png') }}" class="d-block w-100" alt="Inscripciones Abiertas 2026">
             </video>
             <div class="carousel-caption">
                 <h2>Inscripciones Abiertas 2026</h2>
@@ -140,12 +138,14 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="card resource-card">
-                        <img src="{{asset('img/actextracurricular.png')}}" class="card-img-top" alt="Actividades" style="object-fit: scale-down;">
-                        <div class="card-body">
-                            <h5 class="card-title">Actividades Extracurriculares</h5>
+                    <a href="{{route('boletin.informativo')}}" class="card-link-wrapper">
+                        <div class="card resource-card">
+                            <img src="{{asset('img/boletin.png')}}" class="card-img-top" alt="Actividades" style="object-fit: scale-down;">
+                            <div class="card-body">
+                                <h5 class="card-title">Boletín Informativo</h5>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
