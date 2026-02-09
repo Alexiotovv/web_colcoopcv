@@ -47,7 +47,7 @@
                                             TEMARIO 2° A 6° PRIMARIA
                                         </h5>
                                         <p class="text-muted mb-0">
-                                            <small>Plan de estudios completo para Primaria</small>
+                                            <small>Temarios para Primaria</small>
                                         </p>
                                     </div>
                                     <div class="col-md-2 text-end">
@@ -59,6 +59,49 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="temario-item mb-3">
+                                <div class="row align-items-center">
+                                    <div class="col-md-10">
+                                        <h5 class="temario-title mb-1">
+                                            <i class="bi bi-file-earmark-pdf text-danger me-2"></i>
+                                            2° a 6° GRADO DE PRIMARIA - INGLÉS
+                                        </h5>
+                                        <p class="text-muted mb-0">
+                                            <small>Temarios para Primaria</small>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-2 text-end">
+                                        <a href="{{ asset('files/temarios/2°-a-6°-GRADO-DE-PRIMARIA-INGLÉS.pdf') }}" 
+                                           class="btn btn-primary btn-sm"
+                                           download="2°-a-6°-GRADO-DE-PRIMARIA-INGLÉS">
+                                            <i class="bi bi-download me-1"></i> Descargar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="temario-item mb-3">
+                                <div class="row align-items-center">
+                                    <div class="col-md-10">
+                                        <h5 class="temario-title mb-1">
+                                            <i class="bi bi-file-earmark-pdf text-danger me-2"></i>
+                                            4°-a-6°-GRADO-DE-PRIMARIA-CHINO-MANDARÍN
+                                        </h5>
+                                        <p class="text-muted mb-0">
+                                            <small>Temarios para Primaria</small>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-2 text-end">
+                                        <a href="{{ asset('files/temarios/4°-a-6°-GRADO-DE-PRIMARIA-CHINO-MANDARÍN.pdf') }}" 
+                                           class="btn btn-primary btn-sm"
+                                           download="4°-a-6°-GRADO-DE-PRIMARIA-CHINO-MANDARÍN">
+                                            <i class="bi bi-download me-1"></i> Descargar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
