@@ -147,6 +147,18 @@
                         </div>
                     </a>
                 </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <a href="{{ route('horas.libres') }}" class="card-link-wrapper">
+                        <div class="card resource-card">
+                            <img src="{{ asset('img/horaslibres.png') }}" class="card-img-top" alt="Horas Libres" style="object-fit: scale-down;">
+                            <div class="card-body">
+                                <h5 class="card-title">Horas Libres</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>

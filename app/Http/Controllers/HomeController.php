@@ -19,6 +19,11 @@ class HomeController extends Controller
         return view('pages.boletin');
     }
 
+    public function horaslibres()
+    {
+        return view('pages.horaslibres');
+    }
+
     public function reglamento_interno()
     {
         return view('pages.reglamento_interno');

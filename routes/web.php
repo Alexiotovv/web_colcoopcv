@@ -32,6 +32,9 @@ Route::get('/reclamaciones', [HomeController::class, 'reclamaciones'])->name('re
 // Documentos
 Route::get('/documentos/{tipo}', [HomeController::class, 'documentos'])->name('documentos.show');
 
+//Horas Libres:
+Route::get('/horas-libres', [HomeController::class, 'horaslibres'])->name('horas.libres');
+
 // Ruta de fallback para SPA o página 404 personalizada
 Route::fallback(function () {
     return view('errors.404');
