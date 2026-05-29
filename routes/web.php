@@ -37,6 +37,5 @@ Route::get('/horas-libres', [HomeController::class, 'horaslibres'])->name('horas
 
 // Ruta de fallback para SPA o página 404 personalizada
 Route::fallback(function () {
-    // return view('errors.404');
-    abort(404);
+    return view('errors.404');
 });
