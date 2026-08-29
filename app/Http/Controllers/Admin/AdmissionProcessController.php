@@ -118,7 +118,7 @@ class AdmissionProcessController extends Controller
     {
         foreach (self::CAMPOS_ARCHIVO as $campo => $config) {
             $archivo = $request->file($campo);
-            $urlActual = $request->input($config['columna']);
+            $urlActual = $request->input($config['columna']) ?: null;
 
             $data[$config['columna']] = $this->resolveUrl($urlActual, $archivo);
         }

@@ -51,11 +51,14 @@
                 <div class="col-md-6">
                     <label class="form-label">{{ $info['titulo'] }}</label>
                     @if ($urlActual)
-                        <a href="{{ asset($urlActual) }}" target="_blank" class="d-block small mb-1">
-                            <i class="bi bi-file-earmark-arrow-down"></i> Ver archivo actual
-                        </a>
+                        <div class="d-flex align-items-center gap-2 mb-1" id="archivo-actual-{{ $nombre }}">
+                            <a href="{{ asset($urlActual) }}" target="_blank" class="small">
+                                <i class="bi bi-file-earmark-arrow-down"></i> Ver archivo actual
+                            </a>
+                            <button type="button" class="btn btn-sm btn-link text-danger p-0" title="Eliminar archivo actual" onclick="eliminarArchivoActual('{{ $nombre }}')">❌</button>
+                        </div>
                     @endif
-                    <input type="hidden" name="{{ $info['columna'] }}" value="{{ old($info['columna'], $urlActual) }}">
+                    <input type="hidden" id="url-{{ $nombre }}" name="{{ $info['columna'] }}" value="{{ old($info['columna'], $urlActual) }}">
                     <input type="file" name="{{ $nombre }}" class="form-control @error($nombre) is-invalid @enderror">
                     @error($nombre) <div class="invalid-feedback">{{ $message }}</div> @enderror
                     <span class="form-text small">Subir/cambiar archivo (déjalo vacío para mantener el actual)</span>
@@ -64,6 +67,17 @@
         </div>
     </div>
 </div>
+
+<script>
+    function eliminarArchivoActual(nombre) {
+        document.getElementById('url-' + nombre).value = '';
+        const bloque = document.getElementById('archivo-actual-' + nombre);
+        if (bloque) {
+            bloque.remove();
+        }
+    }
+</script>
+
 
 <div class="mb-4">
     <button type="submit" class="btn btn-primary">
