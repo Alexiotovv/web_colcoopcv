@@ -36,7 +36,7 @@
                 <h2>Inscripciones Abiertas 2026</h2>
                 <p>Forma parte de nuestra comunidad educativa.</p>
                 <a href="{{ route('admision') }}" class="btn btn-primary">
-                    <i class="bi bi-pencil-square"></i> Admisión 2026
+                    <i class="bi bi-pencil-square"></i> Admisión {{ $anioAdmision ?? '' }}
                 </a>
             </div>
         </div>
@@ -66,7 +66,7 @@
                         <div class="card resource-card">
                             <img src="{{asset('img/admision_2026.png')}}" class="card-img-top" alt="Admisión" style="object-fit: scale-down;">
                             <div class="card-body">
-                                <h5 class="card-title">Admisión 2026</h5>
+                                <h5 class="card-title">Admisión {{ $anioAdmision ?? '' }}</h5>
                             </div>
                         </div>
                     </a>

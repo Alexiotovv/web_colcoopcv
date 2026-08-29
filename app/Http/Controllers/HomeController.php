@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\AdmissionProcess;
 
 class HomeController extends Controller
 {
@@ -11,7 +12,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages.home');
+        $anioAdmision = AdmissionProcess::where('active', true)->value('year');
+
+        return view('pages.home', compact('anioAdmision'));
     }
     
     public function boletin()
@@ -44,6 +47,16 @@ class HomeController extends Controller
     public function admision()
     {
         return view('pages.admision');
+    }
+
+    /**
+     * Mostrar página Admisión dinámica (datos del proceso activo)
+     */
+    public function admisionDinamica()
+    {
+        $proceso = AdmissionProcess::where('active', true)->first();
+
+        return view('pages.admision-dinamica', compact('proceso'));
     }
     public function listaUtiles()
     {

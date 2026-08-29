@@ -3,13 +3,17 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\AdmissionProcessController;
+use App\Http\Controllers\Admin\UserController;
 
 // Página principal
 Route::get('/', [HomeController::class, 'index'])->name('inicio');
 
 // Otras páginas principales
 Route::get('/nosotros', [HomeController::class, 'nosotros'])->name('nosotros');
-Route::get('/admision', [HomeController::class, 'admision'])->name('admision');
+Route::get('/admision', [HomeController::class, 'admisionDinamica'])->name('admision');
 Route::get('/reglamento/interno', [HomeController::class, 'reglamento_interno'])->name('reglamento.interno');
 Route::get('/boletin', [HomeController::class, 'boletin'])->name('boletin.informativo');
 
@@ -34,6 +38,21 @@ Route::get('/documentos/{tipo}', [HomeController::class, 'documentos'])->name('d
 
 //Horas Libres:
 Route::get('/horas-libres', [HomeController::class, 'horaslibres'])->name('horas.libres');
+
+// Autenticación
+Route::middleware('guest')->group(function () {
+    Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+    Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
+});
+Route::post('/logout', [LoginController::class, 'logout'])->middleware('auth')->name('logout');
+
+// Panel administrativo
+Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::patch('/admision/{admision}/activar', [AdmissionProcessController::class, 'activate'])->name('admision.activate');
+    Route::resource('admision', AdmissionProcessController::class)->except(['show']);
+    Route::resource('usuarios', UserController::class)->except(['show']);
+});
 
 // Ruta de fallback para SPA o página 404 personalizada
 Route::fallback(function () {
