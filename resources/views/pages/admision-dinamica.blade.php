@@ -117,12 +117,13 @@
                 </div>
 
                 <!-- Disposiciones para la Admisión (PDF con vista previa) -->
+                
                 @if ($proceso->disposiciones_pdf_url)
                 <div class="admission-card mb-5">
                     <div class="card-header bg-secondary text-white">
                         <h2 class="mb-0">
                             <i class="bi bi-file-earmark-pdf me-2"></i>
-                            DISPOSICIONES PARA LA ADMISIÓN {{ $proceso->year }}
+                            DISPOSICIONES PARA LA ADMISIÓN {{ $proceso->year }} <h4><strong>Leer Atentamente, por favor.</strong></h4>
                         </h2>
                     </div>
                     <div class="card-body">
