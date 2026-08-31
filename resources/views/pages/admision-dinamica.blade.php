@@ -94,9 +94,9 @@
                         <div class="vacantes mb-5">
                             <h4 class="text-success mb-3">
                                 <i class="bi bi-person-badge me-2"></i>
-                                Vacantes Disponibles
+                                Vacantes Disponibles PRIMARIA Y SECUNDARIA
                             </h4>
-                            <div class="row">
+                            {{-- <div class="row">
                                 <div class="col-md-6">
                                     <div class="vacante-card text-center p-4">
                                         <i class="bi bi-people-fill vacante-icon text-primary mb-3"></i>
@@ -111,7 +111,7 @@
                                         <p class="vacante-text">1° al 5° grado</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@
                             <iframe src="{{ asset($proceso->disposiciones_pdf_url) }}" title="Disposiciones para la Admisión {{ $proceso->year }}" style="border: 1px solid #dee2e6; border-radius: 8px;"></iframe>
                         </div>
                         <a href="{{ asset($proceso->disposiciones_pdf_url) }}" target="_blank" class="btn btn-primary">
-                            <i class="bi bi-download me-1"></i> Descargar Disposiciones
+                            <i class="bi bi-download me-1"></i> Descargar Documento
                         </a>
                     </div>
                 </div>
@@ -140,9 +140,9 @@
                 @php
                     $documentosDescarga = collect([
                         ['label' => 'ANEXO CONFORMIDAD ADMISIÓN '.$proceso->year, 'url' => $proceso->anexo_conformidad_url],
-                        ['label' => 'FICHA DE INSCRIPCIÓN', 'url' => $proceso->ficha_inscripcion_url],
-                        ['label' => 'CONTRATO DE PRESTACIÓN DE SERVICIOS EDUCATIVOS – '.$proceso->year, 'url' => $proceso->contrato_prestacion_url],
                         ['label' => 'FICHA DEL POSTULANTE-'.$proceso->year, 'url' => $proceso->ficha_postulante_url],
+                        ['label' => 'FICHA DE INSCRIPCIÓN (SOLO AQUELLOS QUE SALEN APTOS)', 'url' => $proceso->ficha_inscripcion_url],
+                        ['label' => 'CONTRATO DE PRESTACIÓN DE SERVICIOS EDUCATIVOS – '.$proceso->year, 'url' => $proceso->contrato_prestacion_url],
                     ])->filter(fn ($doc) => ! empty($doc['url']))->values();
                     $colores = ['primary', 'success', 'secondary', 'warning'];
                 @endphp
@@ -174,7 +174,6 @@
                     </div>
                 </div>
                 @endif
-
             </div>
         </div>
     </div>
@@ -195,11 +194,11 @@
                         <a href="{{ route('inicio') }}" class="btn btn-light btn-lg me-3">
                             <i class="bi bi-house me-2"></i> Volver al Inicio
                         </a>
-                        @if ($proceso)
+                        {{-- @if ($proceso)
                         <a href="#documentos" class="btn btn-primary btn-lg" onclick="descargarTodos()">
                             <i class="bi bi-download me-2"></i> Descargar Documentos
                         </a>
-                        @endif
+                        @endif --}}
                     </div>
                 </div>
             </div>
